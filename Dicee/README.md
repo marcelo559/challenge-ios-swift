@@ -8,6 +8,19 @@ The objective is watch the tutorial to introduce the core programming concepts a
 
 The app have two dice that react with interaction "roll" button. When you click the button the app random numbers between 1 and 6 and change the dice, each die have differente variables to controll what image show it. The "default" code, that I wrote while watched tutorials videos I storage on branch called "Original" and the improvements on main branch. Enjoy!
 
+### Second challenge
+As a user, I want to roll the dice with device in landscape position to improve usability.
+
+**Acceptance criteria:**
+
+- All the deafult elements will be show in the screen;
+- Use setting constraints, safe area, alignment and Stack Views;
+- Split screen in two columns;
+- On the left side the logo should be align in the horizontal and vertical middle;
+- On the right side there are the dice, labels and button;
+- Mantein the samy features and business rules, only layout will be change;
+
+
 ### My first challenge
 As a user, I want to know what die win the round to rapidly identify the winner.
 
