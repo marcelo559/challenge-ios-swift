@@ -1,27 +1,14 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+Hello, I'm starting to study the Swift iOS programming language through Dr. Angela Yu's "The Complete iOS App Development Bootcamp" course.
 
-# Egg Timer
+I will share my study codes in this folder because I'll including challenges to improve my skills. If you'd like, feel free to share any comments on best practices, improvements, or sugagestions - I'd be very happy to receive your feedback.  I storage on branch called "Original" and the improvements on main branch. Enjoy!
 
-## Our Goal
+# Egg Timer App
+## Inicial App Goal 
+This module will be a mix of tutorials and challenges. Most importantly, we want you to get comfortable with looking up how to do something you've never done before. In certain places of this module, you’ll need to follow the 5 step process you learnt in the Xylophone module and use Google search, StackOverflow and Apple Documentation to make your code do what you want it to. But there are also other parts where we’ll take you step-by-step through new Swift programming concepts.
 
-This module will be a mix of tutorials and challenges. Most importantly, we want you to get comfortable with looking up how to do something you've never done before. In certain places of this module, you’ll need to follow the 5 step process you learnt in the Xylophone module and use Google search, StackOverflow and Apple Documentation to make your code do what you want it to. But there are also other parts where we’ll take you step-by-step through new Swift programming concepts. 
+### My first challenge
+As a user, I want to listen a alarm sounds indicated to egg was done.
 
-## What You'll Make
+**Acceptance criteria:**
 
-You’ll be building a beautiful egg timer app to boil your eggs to perfection depending on how you prefer your eggs. 
-
-## What you will learn
-
-* Swift Collection types - Dictionaries
-* The Swift Timer API
-* Conditional statements - IF/ELSE
-* Conditional statements - Switch
-* Functions with outputs
-* How to use the ProgressView
-
-
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
-
+- [ ] When timer is over alarm sound plays.
