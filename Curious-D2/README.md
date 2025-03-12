@@ -10,18 +10,18 @@ I’m going to make a trivia quiz app, to interact with Disney lovers that stayi
 
 ## What I will explore
 First Step:
-[v] Create and set up a new iOS project from scratch
-[v] App design in Xcode using iOS Components
-[v] Incorporate my own image assets into my app
-[v] Design and create a custom app icon
-[v] Design my own user interface by Figma my self layout
-[v] Changing UI Elements programmatically
-[v] Detect user interaction and respond to it
-[v] Understand Constraints 
-[v] Alignment and Pinning Elements
-[v] Use Swift Variables and Arrays to store data
-[v] Create a UIProgressView to keep track of questions
-[v] Explore Swift Structures
-[v] Explore design patterns and use the Model View Controller pattern
-[ ] Explore Swift Functions that can have outputs
-[ ] Implement MVC
+- [x] Create and set up a new iOS project from scratch
+- [x] App design in Xcode using iOS Components
+- [x] Incorporate my own image assets into my app
+- [x] Design and create a custom app icon
+- [x] Design my own user interface by Figma my self layout
+- [x] Changing UI Elements programmatically
+- [x] Detect user interaction and respond to it
+- [x] Understand Constraints 
+- [x] Alignment and Pinning Elements
+- [x] Use Swift Variables and Arrays to store data
+- [x] Create a UIProgressView to keep track of questions
+- [x] Explore Swift Structures
+- [x] Explore design patterns and use the Model View Controller pattern
+- [ ] Explore Swift Functions that can have outputs
+- [ ] Implement MVC
