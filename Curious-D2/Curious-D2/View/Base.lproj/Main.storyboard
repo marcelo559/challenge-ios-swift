@@ -81,6 +81,11 @@
                                                                             <constraint firstItem="xCy-2p-qeQ" firstAttribute="centerY" secondItem="MTU-Fn-mwd" secondAttribute="centerY" id="2lh-MM-l53"/>
                                                                             <constraint firstItem="xCy-2p-qeQ" firstAttribute="centerX" secondItem="MTU-Fn-mwd" secondAttribute="centerX" id="F6b-R6-eIK"/>
                                                                         </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="8"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                 </subviews>
                                                                 <constraints>
@@ -112,8 +117,13 @@
                                             <constraint firstAttribute="bottom" secondItem="bmf-FX-dod" secondAttribute="bottom" id="wbt-xN-JTj"/>
                                             <constraint firstAttribute="trailing" secondItem="bmf-FX-dod" secondAttribute="trailing" constant="16" id="xNn-fM-1Mo"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4Y-W2-xrb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4Y-W2-xrb">
                                         <rect key="frame" x="0.0" y="112" width="361" height="423"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,15 +137,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="nNo-wd-rKS"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="True">
-                                                    <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="5">
-                                                        <color key="strokeColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                                </buttonConfiguration>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="True"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bym-jD-HI3"/>
                                                 </connections>
@@ -145,15 +150,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="3Xc-jw-VLq"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="False">
-                                                    <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="5">
-                                                        <color key="strokeColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                                </buttonConfiguration>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="False"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4P6-cI-o0O"/>
                                                 </connections>
@@ -181,6 +181,7 @@
                         <outlet property="falseButton" destination="blo-jn-XQC" id="h5S-KZ-jat"/>
                         <outlet property="progressBar" destination="n6O-48-dW7" id="d1x-M9-A02"/>
                         <outlet property="questionLabel" destination="K4Y-W2-xrb" id="PYq-bz-6hH"/>
+                        <outlet property="scoreLabel" destination="HRT-g1-aaF" id="y17-HM-P8I"/>
                         <outlet property="trueButton" destination="Z9a-du-q82" id="rkC-G0-5zc"/>
                     </connections>
                 </viewController>
