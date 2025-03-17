@@ -23,5 +23,5 @@ First Step:
 - [x] Create a UIProgressView to keep track of questions
 - [x] Explore Swift Structures
 - [x] Explore design patterns and use the Model View Controller pattern
-- [ ] Explore Swift Functions that can have outputs
-- [ ] Implement MVC
+- [x] Explore Swift Functions that can have outputs
+- [x] Implement MVC
