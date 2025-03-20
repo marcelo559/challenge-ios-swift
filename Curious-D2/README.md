@@ -9,6 +9,13 @@ The objective of this project is developer the most of topic that I learned with
 I’m going to make a trivia quiz app, to interact with Disney lovers that staying in attraction line to spend time with subjects that they loves. With multiple choice question apps people can prove your knowledge about the most magical place in the world.
 
 ## What I will explore
+Second Step:
+I developed and practiced based on the following items: Auto Layout, Outlet, Action, Arrays to store trivia questions, functions, structures, and MVC concepts.
+
+Now, I have explored the Range Operator and Randomization to display questions randomly.
+
+Previously, the form displayed the questions in the order it was created in the QuizBrain file. With this new feature, Disney fans now answer random questions—much more fun!
+
 First Step:
 - [x] Create and set up a new iOS project from scratch
 - [x] App design in Xcode using iOS Components
