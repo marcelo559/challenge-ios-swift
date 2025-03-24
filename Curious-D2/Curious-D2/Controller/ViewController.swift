@@ -34,13 +34,12 @@ class ViewController: UIViewController {
             sender.backgroundColor = UIColor.red
         }
         
-        //quizBrain.nextQuestion()
+        quizBrain.nextQuestion()
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
     @objc func updateUI() {
-        quizBrain.nextQuestion()
         questionLabel.text = quizBrain.getQuestionText()
         progressBar.progress = quizBrain.getProgress()
         scoreLabel.text = "\(quizBrain.getScore())"

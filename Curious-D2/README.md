@@ -9,7 +9,32 @@ The objective of this project is developer the most of topic that I learned with
 I’m going to make a trivia quiz app, to interact with Disney lovers that staying in attraction line to spend time with subjects that they loves. With multiple choice question apps people can prove your knowledge about the most magical place in the world.
 
 ## What I will explore
+
+Thirt Step:
+
+For improve my learn more about swift code and understand if I could use another way to developed questions randomly, I used AI to talk and discuss what can I did it.
+
+    At first, I wrote a prompt to Claude.AI asked to create and comment a basic architecture for a simple trivia. Claude.AI suggestion was a little different by Angela's structure, at I was based me.
+    
+    After analise and undestand what it suggestion, I gave it my QuizBrain file and I asked suggestion and tips to improve it, after that I fixed my code. The main suggestion was split the nextQuestion function in 4, creating:
+    
+    - func resetQuiz - reset the quiz to star over
+    - func getRemainingQuestion - get the number of remaining questions
+    - func getTotalQuestions - get the total number of question
+    - func nextQuestion - get random questions only
+    
+    It was great share my project with Claude.AI because he suggestion improvements for a app, like: 
+
+    - Add a dedicated Results screen instead of just an alert
+    - Create a proper data service layer to fetch questions from an API
+    - Add animations and better visual feedback
+    - Implement different categories of questions
+    - Add a timer for each question
+    
+    Let´s move on to the next challenge (step)!
+
 Second Step:
+
 I developed and practiced based on the following items: Auto Layout, Outlet, Action, Arrays to store trivia questions, functions, structures, and MVC concepts.
 
 Now, I have explored the Range Operator and Randomization to display questions randomly.

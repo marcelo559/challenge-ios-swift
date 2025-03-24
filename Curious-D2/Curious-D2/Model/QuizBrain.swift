@@ -41,71 +41,80 @@ struct QuizBrain {
         Question(q: "29There is a time capsule buried at Sleeping Beauty Castle in Disneyland.", a: "True"),
     ]
     
-    //var numberOfQuestions = 5 //possivelmente ele pode contar automaticamente quantas questões eu tenho na variável 'quiz.count'
-    var arrayNumeric = [Int]()
-    var questionNumber = 0
-    var deleteQuestionNumber = 0
-    var quantQuestion = 30
-    var progressBar = 1
-    var score = 0
+    // Keep track of available questions
+    private var availableQuestionIndices = [Int]()
+    private (set) var questionNumber = 0
+    private (set) var score = 0
+    private(set) var progressCount = 1
     
-    mutating func checkAnswer(_ userAnswer: String) -> Bool {
-        if userAnswer == quiz[questionNumber].answer {
-            score += 1
-            return true
-        } else {
-            return false
-        }
+    init() {
+        resetQuiz()
     }
     
+    // Check if the user's answer is correct
+    mutating func checkAnswer(_ userAnswer: String) -> Bool {
+        let isCorrect = userAnswer == quiz[questionNumber].answer
+        if isCorrect {
+            score += 1
+        }
+        return isCorrect
+    }
+    
+    // Get the current score
     func getScore() -> Int {
         return score
     }
     
+    // Get the text of the current question
     func getQuestionText() -> String {
         return quiz[questionNumber].text
     }
     
+    // Calculate and return progress as a percentage (0-1)
     mutating func getProgress() -> Float {
-        let progress = Float(progressBar) / Float(quiz.count)
-        progressBar += 1
+        let progress = Float(progressCount) / Float(quiz.count)
+        progressCount += 1
         return progress
     }
     
     mutating func nextQuestion() {
-        if arrayNumeric.isEmpty {
-            arrayNumeric = [Int](0..<quiz.count)
-            progressBar = 1
+        // If we've used all questions, reset the quiz
+        if availableQuestionIndices.isEmpty {
+            availableQuestionIndices = Array(0..<quiz.count)
+            progressCount = 1
             score = 0
         }
-            questionNumber = arrayNumeric.randomElement() ?? 0
-            print("Questão Selecionada: \(questionNumber) - \(quiz[questionNumber].text)")
-            print("Deletadas: \(deleteQuestionNumber)")
-            print("Itens Array: \(quantQuestion)")
-            print("------------------------------------------------------")
-            
-            arrayNumeric.removeAll {$0 == questionNumber}
-            deleteQuestionNumber += 1
-            quantQuestion = arrayNumeric.count
-            
-            print(arrayNumeric)
-            print("Deletadas 2: \(deleteQuestionNumber)")
-            print("Itens Array 2: \(quantQuestion)")
-            print("------------------------------------------------------")
-            
-            //O Código leu primeiro esse 5 e depois entrou no IF acima
-            //questionNumber = arrayNumeric.randomElement() ?? 5
-            //print("Prox Questão: \(questionNumber) - \(quiz[questionNumber].text)")
-            //print("************** End ****************\n\n")
-            
         
-        /*if questionNumber + 1 < quiz.count {
-            questionNumber += 1
+        // Get a random index from the available indices
+        if let randomIndex = availableQuestionIndices.indices.randomElement() {
+            // Set the question number to the randomly selected index
+            questionNumber = availableQuestionIndices[randomIndex]
+            
+            // Remove the selected index from available indices
+            availableQuestionIndices.remove(at: randomIndex)
         } else {
+            //This should rarely happen, but as a fallback
             questionNumber = 0
-            score = 0
-        }*/
-        
+        }
     }
     
+    // Reset the quiz to star over
+    mutating func resetQuiz(){
+        availableQuestionIndices = Array(0..<quiz.count)
+        score = 0
+        progressCount = 1
+        
+        //Select the first question
+        nextQuestion()
+    }
+    
+    // Get the number of remaining questions
+    func getRemainingQuestion() -> Int {
+        return availableQuestionIndices.count
+    }
+    
+    // Get the total number of questions
+    func getTotalQuestions() -> Int {
+        return quiz.count
+    }
 }
