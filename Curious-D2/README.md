@@ -4,36 +4,40 @@
 
 The objective of this project is developer the most of topic that I learned with beginner classes the course "The Complete iOS App Development Bootcamp" by Angela Yu. She introduced the core programming concepts that are the foundation of most of the apps.
 
-## What I will create
+## What I created
 
-I’m going to make a trivia quiz app, to interact with Disney lovers that staying in attraction line to spend time with subjects that they loves. With multiple choice question apps people can prove your knowledge about the most magical place in the world.
+I made a trivia quiz app, that would interacted with Disney lovers that staying in attractions lines to spend time with subjects that they loves. With boolean question apps people can prove your knowledge about the most magical place in the world. Choosing True or False!
 
-## What I will explore
+## What I explored
 
-Thirt Step:
+### Fourth Step (and last):
+
+I watched another course for complementing my learned. I learned with Eric Brito classes by course "Curso Completo Desenvolvimento iOS 11 Swift 4 - Crie 20 Apps" (Complete course iOS 11 Swift 4 Development - Build 20 Apps) for complementary my knowleage, and I created multi-screen app by learning about SEGUEs to stacking the quiz result screen.
+
+### Thirt Step:
 
 For improve my learn more about swift code and understand if I could use another way to developed questions randomly, I used AI to talk and discuss what can I did it.
 
-    At first, I wrote a prompt to Claude.AI asked to create and comment a basic architecture for a simple trivia. Claude.AI suggestion was a little different by Angela's structure, at I was based me.
+At first, I wrote a prompt to Claude.AI asked to create and comment a basic architecture for a simple trivia. Claude.AI suggestion was a little different by Angela's structure, at I was based me.
     
-    After analise and undestand what it suggestion, I gave it my QuizBrain file and I asked suggestion and tips to improve it, after that I fixed my code. The main suggestion was split the nextQuestion function in 4, creating:
+After analise and undestand what it suggestion, I gave it my QuizBrain file and I asked suggestion and tips to improve it, after that I fixed my code. The main suggestion was split the nextQuestion function in 4, creating:
     
-    - func resetQuiz - reset the quiz to star over
-    - func getRemainingQuestion - get the number of remaining questions
-    - func getTotalQuestions - get the total number of question
-    - func nextQuestion - get random questions only
+- func resetQuiz - reset the quiz to star over
+- func getRemainingQuestion - get the number of remaining questions
+- func getTotalQuestions - get the total number of question
+- func nextQuestion - get random questions only
     
-    It was great share my project with Claude.AI because he suggestion improvements for a app, like: 
+It was great share my project with Claude.AI because he suggestion improvements for a app, like: 
 
-    - Add a dedicated Results screen instead of just an alert
-    - Create a proper data service layer to fetch questions from an API
-    - Add animations and better visual feedback
-    - Implement different categories of questions
-    - Add a timer for each question
+- Add a dedicated Results screen instead of just an alert
+- Create a proper data service layer to fetch questions from an API
+- Add animations and better visual feedback
+- Implement different categories of questions
+- Add a timer for each question
     
-    Let´s move on to the next challenge (step)!
+Let´s move on to the next challenge (step)!
 
-Second Step:
+### Second Step:
 
 I developed and practiced based on the following items: Auto Layout, Outlet, Action, Arrays to store trivia questions, functions, structures, and MVC concepts.
 
@@ -41,7 +45,7 @@ Now, I have explored the Range Operator and Randomization to display questions r
 
 Previously, the form displayed the questions in the order it was created in the QuizBrain file. With this new feature, Disney fans now answer random questions—much more fun!
 
-First Step:
+### First Step:
 - [x] Create and set up a new iOS project from scratch
 - [x] App design in Xcode using iOS Components
 - [x] Incorporate my own image assets into my app

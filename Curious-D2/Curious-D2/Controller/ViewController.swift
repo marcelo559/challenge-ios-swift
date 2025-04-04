@@ -34,9 +34,23 @@ class ViewController: UIViewController {
             sender.backgroundColor = UIColor.red
         }
         
+        if(quizBrain.lastQuestion()){
+            self.showResults()
+        }
         quizBrain.nextQuestion()
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+    }
+    
+    func showResults() {
+        performSegue(withIdentifier: "resultSegue", sender: nil)
+    }
+    
+    //send information to another screen
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController = segue.destination as! ResultViewController
+        resultViewController.resultScore = quizBrain.score
+        resultViewController.totalQuestions = quizBrain.getTotalQuestions()
     }
     
     @objc func updateUI() {
